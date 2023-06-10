@@ -1,0 +1,235 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav .logo {
+    float: left;
+    position: middle;
+    line-height: 100px;
+    text-align: center;
+}
+nav .logo img {
+    vertical-align: middle;
+    width: 80px;
+}
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* pengaturan header*/
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h3 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.tombol {
+    opacity: 100%;
+    background-color: #29a9bd00;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 30px 0px 30px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ababab;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+section {
+    padding: 30px 0px 30px 0px;
+}
+section h3 {
+    font-size: 30px;
+}
+section h3::after {
+    content: "";
+    border-bottom: 5px solid #ababab;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#aboutus {
+    position: fixed;
+    text-align: center;
+}
+section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+}
+section .konten-isi p {
+    font-style: normal;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+nav.putih ul li a {
+    color: #333;
+
+}
+nav .logo img.hitam {
+    display: none;
+}
+table{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150%,-150%);
+    width: 60%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+   
+   }
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+    
+   
+   }
+   th{
+    background-color: #333;
+    color: #fafafa;
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+   }
+   
+@media screen and (max-width: 991.98px){
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+    }
+    nav .menu ul li a {
+        color:#333;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+}
